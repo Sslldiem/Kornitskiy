@@ -31,7 +31,7 @@ def dec2bin(value):
         print('Введено значение превышающее максимальное допустимое.'):
         continue
       GPIO.output(dac, dec2bin(a))
-      print('Предполагаемое напряжение на ЦАП:', ':.f'.format(int(s)/256*3.3))
+      print('Предполагаемое напряжение на ЦАП:', ":.f".format(int(s)/256*3.3))
 finally:
   GPIO.output(dac, 0)
   GPIO.cleanup()
